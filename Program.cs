@@ -23,14 +23,18 @@ namespace teste
             int guess = 0;
             var counter = 0;
 
-             while (max >= min) {
+             while (max >= min) 
+             {
                 counter++;
                 guess = (int)Math.Floor((decimal)(max+min)/2);
-                if (q[guess] == targetValue) {
+                if (q[guess] == targetValue) 
+                {
                     return guess;
-                } else if (q[guess] < targetValue) {
+                } else if (q[guess] < targetValue) 
+                {
                     min = guess + 1;
-                } else {
+                } else 
+                {
                     max = guess - 1;
                 }
             }
