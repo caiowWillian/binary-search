@@ -4,18 +4,22 @@ namespace teste
 {
     class Program
     {
+        static int[] q = new int[20];
+
         static void Main(string[] args)
         {
+            Random random = new Random();
             for(int i = 0; i < q.Length; i++)
             {
-                q[i] = i;
+                q[i] = random.Next();
             }
 
-           int t = GetNumber(20);
+            Array.Sort(q);
+
+           int t = GetNumber(q[19]);
            Console.WriteLine(t);
 
         }
-        static int[] q = new int[20];
         public static int GetNumber(int targetValue)
         {
             var min = 0;
