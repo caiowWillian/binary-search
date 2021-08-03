@@ -6,14 +6,12 @@ namespace teste
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             for(int i = 0; i < q.Length; i++)
             {
                 q[i] = i;
             }
 
-           int t = GetNumber(50);
+           int t = GetNumber(20);
            Console.WriteLine(t);
 
         }
